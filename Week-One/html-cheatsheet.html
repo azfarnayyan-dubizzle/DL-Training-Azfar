@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML Cheat Sheet - Plain HTML Only</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. HEADINGS -->
+    <h1>1. Headings</h1>
+    <h1>This is h1</h1>
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+    <h4>This is h4</h4>
+    <h5>This is h5</h5>
+    <h6>This is h6</h6>
+
+
+    <!-- 2. CONTAINERS -->
+    <h1>2. Containers</h1>
+    <div>This is a div (block container)</div>
+    <p>
+        This is a paragraph with a
+        <span>span (inline container)</span> inside it.
+    </p>
+    <pre>
+        This is a pre tag.
+        It    keeps     spacing
+        and line breaks exactly.
+    </pre>
+    <code>int main() { printf("Hello Geeks"); }</code>
+
+    <!-- 4. SEMANTIC ELEMENTS -->
+    <h1>4. Semantic Elements</h1>
+    <header>
+        <h3>This is a header</h3>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Interview</a> |
+            <a href="#">Languages</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>This is a section</h3>
+            <p>Content of the section goes here.</p>
+        </section>
+
+        <article>
+            <h3>This is an article</h3>
+            <p>A self-contained piece of content.</p>
+        </article>
+
+        <aside>
+            <h3>This is an aside</h3>
+            <p>Extra, related content goes here.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            GeeksforGeeks<br>
+            A-118, Sector 136, Noida, Uttar Pradesh
+        </address>
+        <p>This is a footer</p>
+    </footer>
+
+
+    <!-- 5. TEXT FORMATTING -->
+    <h1>5. Text Formatting &amp; Inline Semantics</h1>
+    <p><em>This text is emphasized</em></p>
+    <p><strong>This text is strong / important</strong></p>
+    <p>GFG<sub>this is subscript</sub></p>
+    <p>GFG<sup>this is superscript</sup></p>
+    <p><abbr title="HyperText Markup Language">HTML</abbr> is an abbreviation</p>
+    <p><mark>This text is highlighted</mark></p>
+    <p><cite>Title of a creative work</cite></p>
+    <p>Open <time>9:00 am</time> to <time>7:00 pm</time></p>
+
+
+    <!-- 6. LISTS -->
+    <h1>6. Lists</h1>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>Web Technology</li>
+        <li>Aptitude &amp; Logical Reasoning</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Array</li>
+        <li>Linked List</li>
+        <li>Stacks</li>
+    </ol>
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>Courses:</dt>
+        <dd>100</dd>
+        <dt>Quizzes:</dt>
+        <dd>500</dd>
+        <dt>Interview Experiences:</dt>
+        <dd>1000</dd>
+    </dl>
+
+
+    <!-- 7. FORMS -->
+    <h1>7. Forms</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <p>
+                <label>Salutation
+                    <select name="salutation">
+                        <option>--None--</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label>First name:
+                    <input name="firstName" placeholder="Enter first name" />
+                </label>
+            </p>
+
+            <p>
+                <label>Last name:
+                    <input name="lastName" />
+                </label>
+            </p>
+
+            <p>
+                Gender:
+                <label><input type="radio" name="gender" value="male" /> Male</label>
+                <label><input type="radio" name="gender" value="female" /> Female</label>
+            </p>
+
+            <p>
+                <label>Language preferred:
+                    <input list="lang" placeholder="Start typing..." />
+                </label>
+                <datalist id="lang">
+                    <option value="Java"></option>
+                    <option value="ReactJS"></option>
+                    <option value="PHP"></option>
+                    <option value="Python"></option>
+                </datalist>
+            </p>
+
+            <p>
+                <label>Email:
+                    <input type="email" name="email" />
+                </label>
+            </p>
+
+            <p>
+                <label>Date of Birth:
+                    <input type="date" name="birthDate" />
+                </label>
+            </p>
+
+            <p>
+                <label>Address:<br>
+                    <textarea name="address" placeholder="Enter your address"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+
+            <p>
+                Profile completeness:
+                <progress value="57" max="100"></progress>
+            </p>
+        </fieldset>
+    </form>
+
+
+    <!-- 8. TABLES -->
+    <h1>8. Tables</h1>
+    <table border="1">
+        <caption>GeeksforGeeks Learning</caption>
+        <thead>
+            <tr>
+                <th>Programming Languages</th>
+                <th>Development</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C programming</td>
+                <td>Full stack development</td>
+            </tr>
+            <tr>
+                <td>Java programming</td>
+                <td>Backend development</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>Frontend development</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Footer content</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- 9. MULTIMEDIA -->
+    <h1>9. Multimedia</h1>
+
+    <p>Image:</p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-13.png"
+         width="300" alt="GeeksforGeeks logo">
+
+    <p>Audio:</p>
+    <audio controls>
+        <source src="test.mp3" type="audio/mp3">
+        <source src="test.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>Video:</p>
+    <video width="400" controls>
+        <source src="myvid.mp4" type="video/mp4">
+        <source src="myvid.ogg" type="video/ogg">
+        Your browser does not support the video element.
+    </video>
+
+    <p>Figure with caption:</p>
+    <figure>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeks-25.png"
+             width="300" alt="The Pulpit Rock">
+        <figcaption>Figure caption goes here</figcaption>
+    </figure>
+
+
+    <!-- 10. CHARACTERS & SYMBOLS -->
+    <h1>10. Characters &amp; Symbols</h1>
+    <p>Copyright: &copy;</p>
+    <p>Trademark: &trade;</p>
+    <p>Ampersand: &amp;</p>
+    <p>Dollar: &dollar;</p>
+    <p>Less than: &lt;</p>
+    <p>Greater than: &gt;</p>
+    <p>Quotation mark: &quot;</p>
+    <p>Apostrophe: &apos;</p>
+
+
+    <!--11. ATTRIBUTES -->
+    <h1>11. Attributes</h1>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-13.png"
+         alt="alt attribute example" width="200" height="70">
+
+    <p>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">
+            href + target attribute example
+        </a>
+    </p>
+
+    <h3 id="geeks" title="This uses the title attribute">
+        id + title attribute example (hover me)
+    </h3>
+
+    <h3 class="gfg">class attribute example</h3>
+
+    <h3 style="color:red;">style attribute example</h3>
+
+    <input type="text" placeholder="placeholder attribute example">
+
+
+    <!-- 12. LINK TAGS -->
+    <h1>12. Link Tags</h1>
+    <p>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">
+            Visit GeeksforGeeks (opens in new tab)
+        </a>
+    </p>
+    <p>
+        <a href="file.txt" download="SampleFile">
+            Download File
+        </a>
+    </p>
+    <!-- <link> tags themselves belong in <head>, e.g.:
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+
+    <!-- 13. EVENT ATTRIBUTES -->
+    <h1>13. Event Attributes</h1>
+    <button onclick="alert('Button clicked!')">Click Me (onclick)</button>
+
+    <p onmouseover="this.style.backgroundColor='lightblue'">
+        Hover over this paragraph (onmouseover)
+    </p>
+
+    <input type="text" onchange="alert('Value changed!')"
+           placeholder="Change my value (onchange)">
+
+    <input type="text" onfocus="this.style.backgroundColor='yellow'"
+           placeholder="Click to focus (onfocus)">
+
+    <input type="text" onkeydown="console.log('Key pressed: ' + event.key)"
+           placeholder="Type here (onkeydown, check console)">
+
+     <!-- 14. PAGE FOOTER -->
+<footer>
+    <small>
+      Copyright © 2026 Dubizzle Labs All Rights Reserved.
+    </small>
+</footer>       
+
+</body>
+
+</html>
