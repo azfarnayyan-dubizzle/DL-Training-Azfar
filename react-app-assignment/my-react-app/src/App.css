@@ -1,0 +1,22 @@
+.page {
+  min-height: 100vh;
+  padding: 40px;
+  background: white;
+  color: black;
+}
+
+.page.dark {
+  background: #222;
+  color: white;
+}
+
+input {
+  display: block;
+  margin: 8px 0 20px;
+  padding: 8px;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 8px 15px;
+}
